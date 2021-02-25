@@ -119,6 +119,10 @@
               "devServerTarget": "u-want-my-girlfriend:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
