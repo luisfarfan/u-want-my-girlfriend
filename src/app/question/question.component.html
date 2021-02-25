@@ -1,0 +1,25 @@
+<div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>
+        <h1><span>Hola Saith!</span></h1>
+      </mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form">
+      <mat-card-content>
+        <h1>
+          <span>Te queria preguntar, SI ES QUE QUIERES SER MI NOVIA?</span>
+        </h1>
+      </mat-card-content>
+      <div fxLayout="row" fxLayoutGap="20px">
+        <div fxFlex style="position: absolute">
+          <button type="button" (click)="yes()" mat-raised-button color="primary" class="btn-block">SI!!!</button>
+        </div>
+        <div style="position: absolute;right: 70px;" (mouseenter)="move()" #buttonNo fxFlex>
+          <button type="button" mat-raised-button color="warn" class="btn-block">NO :C</button>
+        </div>
+      </div>
+    </form>
+  </mat-card>
+</div>
