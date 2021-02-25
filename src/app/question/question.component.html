@@ -1,5 +1,5 @@
 <div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
-  <mat-card class="box">
+  <mat-card class="box" *ngIf="!success; else successTemplate">
     <mat-card-header>
       <mat-card-title>
         <h1><span>Hola Saith!</span></h1>
@@ -23,3 +23,16 @@
     </form>
   </mat-card>
 </div>
+
+
+<ng-template #successTemplate>
+  <mat-card class="box">
+    <form class="example-form">
+      <mat-card-content>
+        <h1>
+          <span>FELICIDADES! AHORA ERES NOVIO DE LUIS FARFAN!</span>
+        </h1>
+      </mat-card-content>
+    </form>
+  </mat-card>
+</ng-template>
